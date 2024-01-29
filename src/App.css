@@ -1,0 +1,131 @@
+/* app.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fffeff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130vh;
+}
+.todo{
+  background-color: #ffbae8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: auto;
+  margin: auto;
+
+}
+.ha{
+  background-color: #6d005b;
+  border: 1px solid #0b2be0;
+  color: orange;
+
+}
+.loading-message{
+  width: 200px;
+  margin: 20px;
+  font-size: 2em; 
+}
+
+.card {
+  background-color: #ffbae8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 20px;
+}
+
+.flower-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: rgb(12, 11, 11);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Estilos para la flor */
+.flower {
+  font-size: 5em; /* Tamaño de la flor */
+  margin-top: 10px;
+}
+
+/* Animaciones para la flor */
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.clic-aqui-message {
+  font-size: 16px; /* Puedes ajustar el tamaño según tus preferencias */
+  margin-top: 5px; /* Puedes ajustar el margen superior según tus preferencias */
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.gallery img,
+.gallery iframe {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cards {
+  background-color: #ec93cf;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 230px;
+  margin: 20px;
+}
