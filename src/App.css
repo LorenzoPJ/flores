@@ -110,14 +110,7 @@ h1 {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 1px;
-}
-
-.gallery img,
-.gallery iframe {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  gap: 10px; /* Ajusta el espacio entre las tarjetas */
 }
 
 .cards {
@@ -126,6 +119,14 @@ h1 {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 230px;
-  margin: 20px;
+  width: 100%; /* Cambia el ancho para ocupar el 100% del contenedor padre */
+  max-width: 300px; /* Establece un ancho máximo para mantener el diseño */
+  margin: 10px; /* Ajusta el margen */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .cards {
+    margin: 5px; /* Ajusta el margen en dispositivos móviles */
+  }
 }
