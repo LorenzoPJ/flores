@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { Link } from 'react-router-dom';
@@ -95,6 +96,7 @@ const FloresApp = () => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const Margarita = ({ onClick, clicEnFlor }) => {
   const margaritaAnimation = useSpring({
     from: { transform: 'scale(0.8)' },
@@ -109,6 +111,7 @@ const Margarita = ({ onClick, clicEnFlor }) => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const Rosa = ({ onClick, clicEnFlor }) => {
   const rosaAnimation = useSpring({
     from: { transform: 'rotate(0deg)' },
