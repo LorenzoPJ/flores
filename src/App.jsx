@@ -1,10 +1,10 @@
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import FloresApp from './components/FloresApp.jsx';
 import FlowerDrawer from './components/FlowerDrawer.jsx';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/flores">
       <Routes>
         <Route path="/" element={<FloresApp />} />
         <Route path="/FlowerDrawer" element={<FlowerDrawer />} />
@@ -14,5 +14,4 @@ function App() {
 }
 
 export default App;
-
 
