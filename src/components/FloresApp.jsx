@@ -21,7 +21,7 @@ const FloresApp = () => {
       timer = setTimeout(() => {
         setMostrarAgradecimiento(false);
         setVerMas(true);
-      }, 2000); // 1 minuto en milisegundos
+      }, 3500); // 1 minuto en milisegundos
     }
     return () => clearTimeout(timer);
   }, [mostrarAgradecimiento]);
@@ -32,9 +32,9 @@ const FloresApp = () => {
 
   const mostrarFlor = () => {
     // Lógica para determinar qué tipo de flor mostrar según el nombre
-    if (nombre.toLowerCase() === 'andrea') {
+    if (nombre.toLowerCase() === 'andrea' ) {
       setFlor('margarita');
-    } else if (nombre.toLowerCase() === 'norelys') {
+    } else if (nombre.toLowerCase() === 'norelys' || nombre.toLowerCase() === 'norelys ') {
       setFlor('rosa');
     } else {
       setFlor('mensaje');
@@ -46,7 +46,7 @@ const FloresApp = () => {
     if (nombre.toLowerCase() === 'andrea' && !clicEnFlorAndrea) {
       setMostrarAgradecimiento(true);
       setClicEnFlorAndrea(true);
-    } else if (nombre.toLowerCase() === 'norelys' && !clicEnFlorNorelys) {
+    } else if ((nombre.toLowerCase() === 'norelys' || nombre.toLowerCase() === 'norelys ') && !clicEnFlorNorelys) {
       setMostrarAgradecimiento(true);
       setClicEnFlorNorelys(true);
     }
@@ -83,7 +83,7 @@ const FloresApp = () => {
             <>
               <Rosa onClick={handleClickFlor} clicEnFlor={clicEnFlorNorelys} />
               {mostrarAgradecimiento && clicEnFlorNorelys && (
-                <p> <b>¡Gracias por recibir mi detalle!</b></p>
+                <p> <b>¡No se si te gustan las rosas, pero queria darte aunque sea virtual! <br></br>Gracias por recibir mi detalle!</b></p>
               )}
               {verMas && <p>Ver más <Link to="/FlowerDrawer"><b>sorpresa</b></Link></p>}
             </>

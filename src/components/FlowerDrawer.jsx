@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import '../app.css';
 import eney from '../assets/nore.jpeg';
 import eny from '../assets/manta.jpeg';
+import luna from '../assets/lunar.jpeg';
 import gol from '../assets/gol.mp4'
 import conozco from '../assets/conozco.mp4'
 
@@ -35,6 +36,10 @@ function FlowerDrawer() {
             <div className="cards">
               <img src={eny} alt="Foto 1" />
               <p>En Manta 🥰</p>
+            </div>
+            <div className="cards">
+              <img src={luna} alt="Foto 1" />
+              <p>Lunar de luna💗🌕</p>
             </div>
             
             
@@ -69,7 +74,13 @@ function FlowerDrawer() {
               <p>Como te conoci⚽🧎‍♀️</p>
             </div>
             
-            
+            <div className="pdf-link">
+            <div className="cards">
+            <a href="/ruta/a/tu/pdf" download="nombre-del-archivo.pdf">
+              Tu libro 💗🍃 <br></br>No se si fue Dios o tal vez fue el destino📄
+            </a>
+          </div>
+          </div>
           </div>
         </>
       )}
